@@ -24,20 +24,16 @@ class ViewController: UIViewController {
     var rightDiceNumber = Int.random(in: 0 ... 5)
     
     /*
-     //These Actions will be perform once the app is running
-     */
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-    
-    /*
      //Perform actions based on pressing roll button.
      */
     @IBAction func rollButtonPressed(_ sender: UIButton) {
+        
         //create an array of image literals
-        diceImageView1.image =  [ #imageLiteral(resourceName: "DiceOne") , #imageLiteral(resourceName: "DiceTwo") , #imageLiteral(resourceName: "DiceThree") ,#imageLiteral(resourceName: "DiceFour") , #imageLiteral(resourceName: "DiceFive") , #imageLiteral(resourceName: "DiceSix") ][Int.random(in: 0...5)]
-        diceImageView2.image =  [ #imageLiteral(resourceName: "DiceOne") , #imageLiteral(resourceName: "DiceTwo") , #imageLiteral(resourceName: "DiceThree") ,#imageLiteral(resourceName: "DiceFour") , #imageLiteral(resourceName: "DiceFive") , #imageLiteral(resourceName: "DiceSix") ][Int.random(in: 0...5)]
+        let diceArray = [ #imageLiteral(resourceName: "DiceOne") , #imageLiteral(resourceName: "DiceTwo") , #imageLiteral(resourceName: "DiceThree") ,#imageLiteral(resourceName: "DiceFour") , #imageLiteral(resourceName: "DiceFive") , #imageLiteral(resourceName: "DiceSix") ]
+        
+        //random element gives you random value within range
+        diceImageView1.image =  diceArray.randomElement()
+        diceImageView2.image =  diceArray.randomElement()
     }
     
 }
