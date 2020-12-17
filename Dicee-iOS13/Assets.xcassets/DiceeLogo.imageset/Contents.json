@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "dice_app_casino_logo.png",
+      "filename" : "diceeLogo.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "dice_app_casino_logo@2x.png",
+      "filename" : "diceeLogo@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "dice_app_casino_logo@3x.png",
+      "filename" : "diceeLogo@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
